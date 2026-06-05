@@ -43,7 +43,7 @@ const footerPara = document.querySelector('footer p');
 if (footerPara) {
     const currentYear = new Date().getFullYear();
     if (footerPara.innerText.includes('2025')) {
-        footerPara.innerHTML = `© ${currentYear} Alex Rivera — crafted with <i class="fas fa-heart" style="color: #f97316;"></i> | Built with HTML/CSS/JS | Open for opportunities`;
+        footerPara.innerHTML = `© ${currentYear} Shine John — crafted with <i class="fas fa-heart" style="color: #f97316;"></i> | Built with HTML/CSS/JS | Open for opportunities`;
     }
 }
 
