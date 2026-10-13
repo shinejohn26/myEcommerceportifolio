@@ -3,23 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Shine John | Ecommerce Operations Specialist</title>
-    <!-- Google Fonts + Font Awesome -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- External CSS -->
+    <title>Shine John | Full-Stack & Operations Specialist</title>
+    <meta name="description" content="Portfolio of Shine John - Ecommerce Operations, Technical Support, SQL Optimization, and NetSuite ERP integrations.">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="container nav-flex">
-            <div class="logo">Shine John</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <!-- Ambient Background Glows -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-code">&lt;</span>Shine John<span class="logo-code">/&gt;</span>
+            </a>
+            
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link btn-nav">Let's Talk</a></li>
             </ul>
         </div>
     </header>
@@ -29,203 +48,418 @@
         <section id="home" class="hero">
             <div class="container hero-grid">
                 <div class="hero-content">
-                    <span class="hero-badge"><i class="fas fa-chart-line"></i> Ecommerce Specialist</span>
-                    <h1>Streamlining <span class="hero-gradient">ecommerce operations</span><br> with data & automation</h1>
-                    <p class="hero-para">Hi, I'm Shine John — results-driven Ecommerce Operations Specialist with hands-on experience in marketplace operations, Customer Support, order management, ERP systems, and SQL-based workflow optimization. I help businesses scale efficiently by reducing manual effort and improving operational accuracy.</p>
-                    <div class="hero-buttons">
-                        <a href="#experience" class="btn btn-primary"><i class="fas fa-briefcase"></i> My experience</a>
-                        <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Let's connect</a>
+                    <div class="badge-row">
+                        <span class="status-indicator">
+                            <span class="pulse-dot"></span> Available for New Opportunities
+                        </span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Bridging <span class="text-gradient">Technical Systems</span> & High-Scale Operations.
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Computer Science Engineer & Operations Specialist with 3+ years optimizing multi-platform ecommerce order pipelines, NetSuite ERP synchronizations, and SQL databases. Reduced manual workflows by 70% with intelligent automation.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-layer-group"></i> Explore Projects
+                        </a>
+                        <a href="mailto:shinejohn26@gmail.com" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Contact Me
+                        </a>
+                    </div>
+
+                    <!-- Impact Metric Badges -->
+                    <div class="metrics-strip">
+                        <div class="metric-card">
+                            <span class="metric-number">1,000+</span>
+                            <span class="metric-label">Daily Orders Handled</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-number">70%</span>
+                            <span class="metric-label">Manual Effort Cut</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-number">6–8</span>
+                            <span class="metric-label">Team Members Led</span>
+                        </div>
                     </div>
                 </div>
-                <div class="hero-avatar">
-                    <div class="avatar-circle">
-                        <!-- Replace with your own image -->
-                        <img src="./unnamed.jpg" alt="Shine John" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+
+                <div class="hero-visual">
+                    <div class="avatar-card">
+                        <div class="avatar-wrapper">
+                            <img src="./img/unnamed.jpg" alt="Shine John" onerror="this.src='https://ui-avatars.com/api/?name=Shine+John&background=6366f1&color=fff&size=512'">
+                        </div>
+                        <div class="floating-badge badge-top">
+                            <i class="fas fa-database"></i> SQL & DB Tuning
+                        </div>
+                        <div class="floating-badge badge-bottom">
+                            <i class="fas fa-server"></i> NetSuite ERP
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- About + Skills -->
-        <section id="about">
+        <!-- About Section -->
+        <section id="about" class="section">
             <div class="container">
-                <h2 class="section-title">About me</h2>
+                <div class="section-header">
+                    <p class="section-tag">Overview</p>
+                    <h2 class="section-title">Engineering Efficiency into Every Flow</h2>
+                </div>
+                
                 <div class="about-grid">
-                    <div class="about-text">
-                        <p>I’m an Ecommerce Operations Specialist with over 3 years of experience managing 1000+ daily orders across multiple marketplaces, ensuring accurate order flow and timely fulfillment. I’ve optimized SQL tables, views, and functions to streamline operational workflows and improve data accessibility across databases.</p>
-                        <p>At Purplepatch Technologies, I reduced manual operational effort from 30 minutes to just 5–10 minutes by implementing SQL-based process improvements and AI-assisted automation. I also monitor inventory synchronization between marketplaces and NetSuite ERP, resolve SKU mapping issues, and coordinate cross-functionally with Operations, IT, and Client Support teams.</p>
-                        <ul class="info-list">
-                            <li><i class="fas fa-map-marker-alt"></i> Remote / Global</li>
-                            <li><i class="fas fa-envelope"></i> shinejohn26@gmail.com</li>
-                            <li><i class="fas fa-clock"></i> Open for opportunities</li>
-                        </ul>
-                    </div>
-                    <div style="flex:1.2">
-                        <h3 style="margin-bottom: 1rem;">Core expertise</h3>
-                        <div class="skills-container">
-                            <span class="skill-chip">Customer Support Specialist</span>
-                            <span class="skill-chip">Marketplace Operations</span>
-                            <span class="skill-chip">Order Management</span>
-                            <span class="skill-chip">Inventory Reconciliation</span>
-                            <span class="skill-chip">SKU Mapping</span>
-                            <span class="skill-chip">SQL / MySQL</span>
-                            <span class="skill-chip">NetSuite ERP</span>
-                            <span class="skill-chip">Advanced Excel</span>
-                            <span class="skill-chip">HTML/CSS/JS</span>
-                            <span class="skill-chip">Bootstrap</span>
-                            <span class="skill-chip">HeidiSQL</span>
+                    <div class="about-card glass-panel">
+                        <h3 class="panel-title"><i class="fas fa-user-circle"></i> Professional Background</h3>
+                        <p>
+                            I hold a <strong>Bachelor of Engineering in Computer Science</strong> and specialize in turning chaotic operational challenges into streamlined, automated workflows. My work sits directly at the intersection of backend database troubleshooting and business-critical operations.
+                        </p>
+                        <p>
+                            At <strong>Purplepatch Technologies</strong>, I drive end-to-end data pipelines for 1,000+ daily ecommerce orders across Amazon, Shopify, Walmart, and NetSuite ERP. By writing custom SQL views, procedures, and AI-assisted workflows, I compressed critical multi-step tasks from 30 minutes down to under 10 minutes.
+                        </p>
+                        
+                        <div class="meta-pills">
+                            <div class="meta-pill"><i class="fas fa-map-marker-alt"></i> Kerala, India (Remote Available)</div>
+                            <div class="meta-pill"><i class="fas fa-language"></i> English, Malayalam, Tamil, Hindi</div>
+                            <div class="meta-pill"><i class="fas fa-graduation-cap"></i> B.E. Computer Science</div>
                         </div>
-                        <h3 style="margin: 1.8rem 0 0.8rem 0;">Tools</h3>
-                        <div class="skills-container">
+                    </div>
 
-                            <span class="skill-chip">Slack</span>
-                            <span class="skill-chip">Asana</span>
-                            <span class="skill-chip">GitHub</span>
+                    <div class="about-stats-card glass-panel">
+                        <h3 class="panel-title"><i class="fas fa-chart-pie"></i> Core Focus Areas</h3>
+                        <div class="focus-list">
+                            <div class="focus-item">
+                                <div class="focus-icon"><i class="fas fa-sync-alt"></i></div>
+                                <div>
+                                    <h4>ERP & Marketplace Sync</h4>
+                                    <p>Resolving SKU mismatches, feed syncs, inventory buffers, and webhook drops.</p>
+                                </div>
+                            </div>
+                            <div class="focus-item">
+                                <div class="focus-icon"><i class="fas fa-terminal"></i></div>
+                                <div>
+                                    <h4>SQL Optimization & Reporting</h4>
+                                    <p>HeidiSQL & MySQL query writing for rapid bug diagnosis, reconciliation, and audit logs.</p>
+                                </div>
+                            </div>
+                            <div class="focus-item">
+                                <div class="focus-icon"><i class="fas fa-headset"></i></div>
+                                <div>
+                                    <h4>Tier 2 Technical Support & Leadership</h4>
+                                    <p>Cross-functional escalation handling, client SLA management, and team mentorship.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- NEW: Work Experience Section (from your CV) -->
-        <section id="experience" class="experience-section">
+        <!-- Filterable Skills -->
+        <section id="skills" class="section">
             <div class="container">
-                <h2 class="section-title">Work experience</h2>
-                <div class="experience-card">
-                    <div class="exp-header">
-                        <div class="exp-title">
-                            <h3>Ecommerce Specialist</h3>
-                            <p class="exp-company"><i class="fas fa-building"></i> Purplepatch Technologies</p>
-                        </div>
-                        <div class="exp-date">
-                            <i class="fas fa-calendar-alt"></i> Jun 2022 – Present
-                        </div>
-                    </div>
-                    <ul class="exp-list">
-                        <li><i class="fas fa-check-circle"></i> Manage and process 1000+ daily ecommerce orders across multiple marketplaces, ensuring accurate order flow and timely fulfillment.</li>
-                        <li><i class="fas fa-check-circle"></i> Optimized SQL tables, views, and functions to streamline operational workflows and improve data accessibility across multiple databases.</li>
-                        <li><i class="fas fa-check-circle"></i> Reduced manual operational effort from ~30 minutes to 5–10 minutes by implementing SQL-based process improvements and AI-assisted workflow automation.</li>
-                        <li><i class="fas fa-check-circle"></i> Monitor inventory synchronization between marketplaces and NetSuite ERP, identifying and resolving inventory discrepancies and SKU mapping issues.</li>
-                        <li><i class="fas fa-check-circle"></i> Manage financial operational activities including A/R Aging, Inventory Ledger monitoring, Balance Sheet verification, and Bank Feed reconciliation in NetSuite.</li>
-                        <li><i class="fas fa-check-circle"></i> Led and coordinated a team of 6–8 members by assigning tasks, tracking deliverables, and ensuring timely execution to maintain high customer satisfaction.</li>
-                        <li><i class="fas fa-check-circle"></i> Communicate directly with clients through Slack and email to provide issue resolution, operational updates, and process support.</li>
-                    </ul>
+                <div class="section-header">
+                    <p class="section-tag">Capabilities</p>
+                    <h2 class="section-title">Technical & Operational Toolkit</h2>
                 </div>
-                <!-- Optional: Certifications section (based on your CV) -->
-                <div class="certifications">
-                    <h3 style="margin: 2rem 0 1rem 0;">Certifications</h3>
-                    <div class="skills-container">
-                        <span class="skill-chip">100 Days of Code: Python Pro Bootcamp</span>
-                        <span class="skill-chip">The Complete Web Development Bootcamp</span>
+
+                <!-- Skill Filter Tabs -->
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-filter="all">All Skills</button>
+                    <button class="filter-btn" data-filter="technical">Data & Fullstack</button>
+                    <button class="filter-btn" data-filter="erp">ERP & FinOps</button>
+                    <button class="filter-btn" data-filter="operations">Support & Management</button>
+                </div>
+
+                <div class="skills-grid" id="skillsGrid">
+                    <!-- Technical -->
+                    <div class="skill-card" data-category="technical">
+                        <i class="fas fa-database skill-icon"></i>
+                        <h4>SQL & MySQL</h4>
+                        <p>Complex queries, views, data extraction, and optimization</p>
+                    </div>
+                    <div class="skill-card" data-category="technical">
+                        <i class="fab fa-python skill-icon"></i>
+                        <h4>Python</h4>
+                        <p>Scripting, data automation, 100 Days of Code Bootcamp</p>
+                    </div>
+                    <div class="skill-card" data-category="technical">
+                        <i class="fab fa-js-square skill-icon"></i>
+                        <h4>HTML5, CSS3 & JavaScript</h4>
+                        <p>Front-end dashboarding, responsive web interfaces</p>
+                    </div>
+                    <div class="skill-card" data-category="technical">
+                        <i class="fas fa-table skill-icon"></i>
+                        <h4>HeidiSQL & Database Tools</h4>
+                        <p>Production DB diagnostics and schema navigation</p>
+                    </div>
+
+                    <!-- ERP -->
+                    <div class="skill-card" data-category="erp">
+                        <i class="fas fa-cubes skill-icon"></i>
+                        <h4>NetSuite ERP</h4>
+                        <p>System configuration, item records, inventory ledger tracking</p>
+                    </div>
+                    <div class="skill-card" data-category="erp">
+                        <i class="fas fa-file-invoice-dollar skill-icon"></i>
+                        <h4>A/R Aging & Reconciliations</h4>
+                        <p>Bank feed matching, balance sheet balance checks</p>
+                    </div>
+                    <div class="skill-card" data-category="erp">
+                        <i class="fas fa-file-excel skill-icon"></i>
+                        <h4>Advanced Excel</h4>
+                        <p>Pivot models, XLOOKUP, discrepancy audit matrices</p>
+                    </div>
+
+                    <!-- Operations & Support -->
+                    <div class="skill-card" data-category="operations">
+                        <i class="fas fa-tags skill-icon"></i>
+                        <h4>SKU Mapping & Sync</h4>
+                        <p>Multi-channel catalog parity & fulfillment routing</p>
+                    </div>
+                    <div class="skill-card" data-category="operations">
+                        <i class="fas fa-user-shield skill-icon"></i>
+                        <h4>Client Escalation Management</h4>
+                        <p>Root-cause diagnostics, Slack/Email SLA adherence</p>
+                    </div>
+                    <div class="skill-card" data-category="operations">
+                        <i class="fas fa-users-cog skill-icon"></i>
+                        <h4>Cross-Functional Leadership</h4>
+                        <p>Team lead for 6–8 associates, creating SOPs & QA reviews</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Projects (Ecommerce focused) -->
-        <section id="projects" class="projects-section">
+        <!-- Experience Section with Perspective Toggle -->
+        <section id="experience" class="section">
             <div class="container">
-                <h2 class="section-title">Featured projects</h2>
+                <div class="section-header">
+                    <p class="section-tag">Career History</p>
+                    <h2 class="section-title">Work Experience & Achievements</h2>
+                </div>
+
+                <div class="experience-container glass-panel">
+                    <div class="exp-role-header">
+                        <div>
+                            <span class="company-badge">Purplepatch Technologies</span>
+                            <h3 class="role-title">Ecommerce Operations & Technical Support Specialist</h3>
+                            <p class="role-location"><i class="fas fa-calendar-alt"></i> June 2022 – Present &bull; Full-time</p>
+                        </div>
+                    </div>
+
+                    <div class="exp-highlights-grid">
+                        <div class="highlight-item">
+                            <span class="highlight-bullet"><i class="fas fa-check"></i></span>
+                            <div>
+                                <strong>High-Volume Order Lifecycle:</strong> Managed 1,000+ daily orders across marketplaces (Amazon, Shopify, Walmart) with automated validations and zero fulfillment bottleneck.
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-bullet"><i class="fas fa-check"></i></span>
+                            <div>
+                                <strong>Database Architecture Tuning:</strong> Re-indexed and authored SQL views and procedures in MySQL/HeidiSQL, shaving query times down and resolving critical order exceptions.
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-bullet"><i class="fas fa-check"></i></span>
+                            <div>
+                                <strong>70% Process Acceleration:</strong> Engineered automated scripts and AI prompts that compressed repetitive 30-minute operational audits down to 5–10 minutes.
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-bullet"><i class="fas fa-check"></i></span>
+                            <div>
+                                <strong>NetSuite ERP Integration:</strong> Monitored real-time sync states, diagnosed inventory discrepancies, corrected broken SKU mappings, and audited financial A/R Aging ledgers.
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-bullet"><i class="fas fa-check"></i></span>
+                            <div>
+                                <strong>Team Mentorship & Coordination:</strong> Led and assigned tasks for a crew of 6–8 members, defining strict SOPs, handling Tier 2 escalations via Slack, and ensuring peak client CSAT.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education & Certifications Row -->
+                <div class="credentials-grid">
+                    <div class="credential-card glass-panel">
+                        <div class="cred-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div>
+                            <h4>Bachelor of Engineering (B.E.)</h4>
+                            <p class="cred-sub">Computer Science and Engineering</p>
+                            <p class="cred-detail">Mar Ephraem College of Engineering & Technology</p>
+                        </div>
+                    </div>
+                    <div class="credential-card glass-panel">
+                        <div class="cred-icon"><i class="fas fa-certificate"></i></div>
+                        <div>
+                            <h4>Industry Certifications</h4>
+                            <p class="cred-sub">100 Days of Code: Complete Python Bootcamp</p>
+                            <p class="cred-detail">The Complete Web Development Bootcamp (Fullstack)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <p class="section-tag">Showcase</p>
+                    <h2 class="section-title">Engineered Solutions & Projects</h2>
+                </div>
+
                 <div class="projects-grid">
-                    <!-- Project 1 -->
-                    <div class="project-card">
-                        <div class="card-icon"><i class="fas fa-tachometer-alt"></i></div>
-                        <div class="card-content">
-                            <h3>Order Flow Dashboard</h3>
-                            <p>SQL-based dashboard for real-time order monitoring, discrepancy detection, and automated reporting. Reduced manual check time by 70%.</p>
-                            <div class="tech-tags">
-                                <span>SQL</span><span>MySQL</span><span>HeidiSQL</span>
-                            </div>
-                            <div class="card-links">
-                                <a href="#"><i class="fab fa-github"></i></a>
-                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    <div class="project-card glass-panel">
+                        <div class="project-header">
+                            <div class="project-badge"><i class="fas fa-database"></i> Database Engine</div>
+                            <div class="project-actions">
+                                <a href="https://github.com/shinejohn26" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
-                    </div>
-                    <!-- Project 2 -->
-                    <div class="project-card">
-                        <div class="card-icon"><i class="fas fa-exchange-alt"></i></div>
-                        <div class="card-content">
-                            <h3>Inventory Sync Tool</h3>
-                            <p>Automated SKU mapping and inventory reconciliation between NetSuite ERP and major marketplaces (Amazon, Shopify, eBay).</p>
-                            <div class="tech-tags">
-                                <span>NetSuite</span><span>API</span><span>Python</span>
-                            </div>
-                            <div class="card-links">
-                                <a href="#"><i class="fab fa-github"></i></a>
-                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
+                        <h3 class="project-title">Real-Time Order Flow & Discrepancy Dashboard</h3>
+                        <p class="project-desc">
+                            Designed high-throughput SQL procedures to detect unfulfilled batches and inventory drift across multi-channel marketplaces, cutting manual diagnosis time by 70%.
+                        </p>
+                        <div class="tag-group">
+                            <span class="tag">MySQL</span>
+                            <span class="tag">HeidiSQL</span>
+                            <span class="tag">Data Analytics</span>
                         </div>
                     </div>
-                    <!-- Project 3 -->
-                    <div class="project-card">
-                        <div class="card-icon"><i class="fas fa-robot"></i></div>
-                        <div class="card-content">
-                            <h3>Workflow Automation Suite</h3>
-                            <p>SQL-based automation that cut daily operational effort from 30 min to 5–10 min using optimized views, functions, and AI assistance.</p>
-                            <div class="tech-tags">
-                                <span>SQL</span><span>AI workflows</span><span>ERP</span>
-                            </div>
-                            <div class="card-links">
-                                <a href="#"><i class="fab fa-github"></i></a>
-                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+
+                    <div class="project-card glass-panel">
+                        <div class="project-header">
+                            <div class="project-badge"><i class="fas fa-cloud-download-alt"></i> Integration</div>
+                            <div class="project-actions">
+                                <a href="https://github.com/shinejohn26" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
+                        <h3 class="project-title">NetSuite ERP & Multi-Channel Sync Pipeline</h3>
+                        <p class="project-desc">
+                            Automated bidirectional SKU reconciliation between NetSuite and external endpoints (Amazon, Shopify), eliminating manual CSV data uploads and synchronization lag.
+                        </p>
+                        <div class="tag-group">
+                            <span class="tag">NetSuite</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">REST APIs</span>
+                        </div>
                     </div>
-                    <!-- Project 4 -->
-                    <div class="project-card">
-                        <div class="card-icon"><i class="fas fa-chart-pie"></i></div>
-                        <div class="card-content">
-                            <h3>Financial Reconciliation Dashboard</h3>
-                            <p>Interactive dashboard for A/R aging, inventory ledger, and bank feed reconciliation using NetSuite and advanced Excel.</p>
-                            <div class="tech-tags">
-                                <span>Excel</span><span>NetSuite</span><span>Power BI</span>
+
+                    <div class="project-card glass-panel">
+                        <div class="project-header">
+                            <div class="project-badge"><i class="fas fa-brain"></i> Automation</div>
+                            <div class="project-actions">
+                                <a href="https://github.com/shinejohn26" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
                             </div>
-                            <div class="card-links">
-                                <a href="#"><i class="fab fa-github"></i></a>
-                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <h3 class="project-title">AI-Assisted Operations & SOP Auto-Generator</h3>
+                        <p class="project-desc">
+                            Integrated custom prompt sequences and error categorization to handle Tier-1 incoming support tickets, slashing response latency and improving customer CSAT scores.
+                        </p>
+                        <div class="tag-group">
+                            <span class="tag">Automation</span>
+                            <span class="tag">Prompt Eng</span>
+                            <span class="tag">Slack API</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-panel">
+                        <div class="project-header">
+                            <div class="project-badge"><i class="fas fa-chart-line"></i> Financial Ops</div>
+                            <div class="project-actions">
+                                <a href="https://github.com/shinejohn26" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
                             </div>
+                        </div>
+                        <h3 class="project-title">Financial Ledger & A/R Aging Auditor</h3>
+                        <p class="project-desc">
+                            Engineered consolidated bank feed and inventory ledger audit sheets comparing marketplace settlements against recorded accounts receivable.
+                        </p>
+                        <div class="tag-group">
+                            <span class="tag">Advanced Excel</span>
+                            <span class="tag">NetSuite FinOps</span>
+                            <span class="tag">Accounting</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact + Form -->
-        <section id="contact">
+        <!-- Contact Section -->
+        <section id="contact" class="section">
             <div class="container">
-                <h2 class="section-title">Let's connect</h2>
-                <div class="contact-wrapper">
-                    <div class="contact-info">
-                        <h3>Optimize · Automate · Scale</h3>
-                        <p>Looking to streamline your ecommerce operations, reduce manual effort, or resolve inventory discrepancies? Let's discuss how I can help your business run smoother.</p>
-                        <div class="contact-details">
-                            <p><i class="fas fa-phone-alt"></i> +91 9656218014</p>
-                            <p><i class="fas fa-envelope"></i> shinejohn26@gmail.com</p>
-                            <p><i class="fas fa-map-pin"></i> Working remotely worldwide</p>
+                <div class="section-header">
+                    <p class="section-tag">Get In Touch</p>
+                    <h2 class="section-title">Let’s Build Something Efficient Together</h2>
+                </div>
+
+                <div class="contact-card glass-panel">
+                    <div class="contact-details">
+                        <h3>Ready to chat?</h3>
+                        <p>Whether you need to scale operational throughput, fix broken database pipelines, or streamline ERP synchronization, my inbox is always open.</p>
+                        
+                        <div class="contact-links-list">
+                            <a href="mailto:shinejohn26@gmail.com" class="c-link">
+                                <i class="fas fa-envelope"></i>
+                                <span>shinejohn26@gmail.com</span>
+                            </a>
+                            <a href="tel:+919656218014" class="c-link">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>+91 96562 18014</span>
+                            </a>
+                            <div class="c-link">
+                                <i class="fas fa-map-pin"></i>
+                                <span>Allapuzha, Kerala, India (Remote)</span>
+                            </div>
                         </div>
-                        <div class="social-links">
-                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" aria-label="Slack"><i class="fab fa-slack"></i></a>
+
+                        <div class="social-deck">
+                            <a href="https://github.com/shinejohn26" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/shine-john26" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="mailto:shinejohn26@gmail.com" aria-label="Email"><i class="fas fa-paper-plane"></i></a>
                         </div>
                     </div>
-                    <form class="contact-form" id="portfolioForm">
-                        <input type="text" placeholder="Your name" required>
-                        <input type="email" placeholder="Email address" required>
-                        <textarea rows="4" placeholder="Tell me about your ecommerce operations challenge..."></textarea>
-                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send message</button>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="Alex Morgan" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Work Email</label>
+                            <input type="email" id="email" placeholder="alex@company.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4" placeholder="Let's connect regarding an operations or software engineering role..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
+                            <span>Send Message</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>© 2025 Shine John — crafted with <i class="fas fa-heart" style="color: #f97316;"></i> | Ecommerce Operations Specialist | SQL · NetSuite · Automation</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; <span id="currentYear">2026</span> Shine John. Designed & Built with Modern CSS, Clean JS, & Passion.</p>
+            <div class="back-to-top" id="backToTop" aria-label="Back to Top">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </div>
     </footer>
 
-    <script src="./index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
